@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Info - Form</title>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+<body>
+	<div id="mainform">
+    	<div id="warning-message">&nbsp;</div>
+		<!--<h2>Submit Form Using AJAX and jQuery</h2> --> <!-- Required div Starts Here -->
+		<div id="form">
+			<h3>Contact Info</h3>
+			<ul>
+            	<li>
+                	<label>Address 1:</label>
+                	<input id="address1" name="address1" type="text" placeholder="What can we can call u?" required>
+                    <span class="form_hint">Where are you?</span>
+            	</li>
+            	<li>
+                	<label>Address 2:</label>
+                	<input id="address2" name="address" type="text" placeholder="What can we can call u?">
+                    <span class="form_hint green-bg">Please enter additional address</span>
+            	</li>
+            	<li>
+                	<label>Country<span style="color:red;">*</span>:</label>
+                    <select id="country" name="country">
+                        <option value="none">Select Country</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="India">India</option>
+                        <option value="Pakistan">Pakistan</option>
+                    </select>
+            	</li>
+                <li>
+                	<label>Phone:</label>
+                	<input id="phone" name="phone" type="number" placeholder="What is your calling number?">
+                    <span class="form_hint green-bg">Please enter your phone number</span>
+            	</li>
+            	<li>
+                	<input id="contact_info_submit" type="button" value="submit">
+                </li>
+             </ul>   
+		</div>
+	</div>
+</body>
+</html>

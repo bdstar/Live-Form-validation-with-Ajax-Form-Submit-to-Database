@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>General Info - Form</title>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+<body>
+	<div id="mainform">
+		<!--<h2>Submit Form Using AJAX and jQuery</h2> --> <!-- Required div Starts Here -->
+        <div id="warning-message">&nbsp;</div>
+		<div id="form">
+			<h3>General Info</h3>
+			<ul>
+                <li>
+                	<label>Name :</label>
+                	<input id="name" name="name" type="text" placeholder="What can we can call u?" required="required">
+                    <span class="form_hint">What can we can call u?</span>
+            	</li>
+            	<li>
+                	<label>Email:</label>
+                	<input id="email" name="email" type="email" placeholder="Where should we can contact with u?" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                    <span class="form_hint">Where should we can contact with u?</span>
+            	</li>
+            	<li>
+                	<label>Confirm Email:</label>
+                	<input id="confirm_email" name="confirm_email" type="email" placeholder="Confirm your previous contact details?">
+                    <span class="form_hint green-bg">Confirm Email address that you enter before.</span>
+            	</li>
+            	<li>
+                	<label>Password:</label>
+                	<input id="password" name="password" type="password" placeholder="Enter your Security code" required>
+                    <span class="form_hint">Enter your Security code</span>
+            	</li>
+            	<li>
+                	<label>Confirm Password:</label>
+                	<input id="confirm_password" name="confirm_password" type="password" placeholder="Confirm your previous Security code">
+                    <span class="form_hint green-bg">Confirm your previous Security code</span>
+            	</li>
+            	<li>
+                	<input id="general_info_submit" type="button" value="Next">
+                </li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
